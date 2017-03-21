@@ -8,7 +8,7 @@ public class FirstTest {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Thangakumar\\Technical\\Learnings\\Self Learnings\\Java\\UIAutomation_basic\\External\\Chrome\\chromedriver.exe");
+				System.getProperty("user.dir") + "\\External\\Chrome\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http:\\www.amazon.com");
 		driver.manage().window().maximize();
